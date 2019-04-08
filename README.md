@@ -1,6 +1,8 @@
 # three.js OutlinePass
 > is the three.js OutlinePass from [official examples](https://threejs.org/examples/?q=outlin#webgl_postprocessing_outline)
 
+
+
 # Installation
 To install with npm do
 
@@ -24,7 +26,6 @@ outlinePass.renderToScreen = true;
 outlinePass.selectedObjects = selectedObjects;
 
 compose.addPass(renderPass);
-
 compose.addPass(outlinePass);
 var params = {
     edgeStrength: 2,
@@ -44,7 +45,9 @@ compose.render(scene, camera)
 
 
 **See also example**
-[code]()
-[demo]()
+[code](https://github.com/scqilin/three-OutlinePass/blob/master/examples/index.js)
+[demo](https://scqilin.github.io/three-OutlinePass/examples/)
 
-The code also works in typescript.
+![img](https://scqilin.github.io/three-OutlinePass/examples/outline1.jpg)
+
+The code also works in typescript(but there are some small problems)
