@@ -17,10 +17,9 @@ three.js - Outline Pass,I have just clone the code and modified to export it as 
 import * as THREE from "three"
 import { RenderPass, EffectComposer, OutlinePass } from "three-outlinepass"
 
-
-var compose = new EffectComposer(renderer, undefined);
+var compose = new EffectComposer(renderer);
 var selectedObjects = []
-var renderPass = new RenderPass(scene, camera, undefined, undefined, undefined);
+var renderPass = new RenderPass(scene, camera);
 var outlinePass = new OutlinePass(new THREE.Vector2(window.innerWidth, window.innerHeight), scene, camera, selectedObjects);
 outlinePass.renderToScreen = true;
 outlinePass.selectedObjects = selectedObjects;
@@ -45,8 +44,8 @@ compose.render(scene, camera)
 
 
 **See also example**
-[code](https://github.com/scqilin/three-OutlinePass/blob/master/examples/index.js)
-[demo](https://scqilin.github.io/three-OutlinePass/examples/)
+- [code](https://github.com/scqilin/three-OutlinePass/blob/master/examples/index.js)
+- [demo](https://scqilin.github.io/three-OutlinePass/examples/)
 
 ![img](https://scqilin.github.io/three-OutlinePass/examples/outline1.jpg)
 
