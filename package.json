@@ -1,6 +1,6 @@
 {
   "name": "three-outlinepass",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "three.js Outline Pass",
   "main": "OutlinePass.js",
   "scripts": {
