@@ -1,5 +1,5 @@
 # three.js OutlinePass
-> is the three.js OutlinePass from official repo examples
+> is the three.js OutlinePass from [official examples](https://threejs.org/examples/?q=outlin#webgl_postprocessing_outline)
 
 # Installation
 To install with npm do
@@ -9,7 +9,7 @@ To install with npm do
 
 # Usage
 
-three.js - Outline Pass by [Prashant Sharma](http://eduperiment.com) and [Ben Houston](https://clara.io)
+three.js - Outline Pass,I have just clone the code and modified to export it as a module so you can do something like
 
 ```javascript
 import * as THREE from "three"
@@ -41,3 +41,10 @@ outlinePass.hiddenEdgeColor.set(0xffffff);
 
 compose.render(scene, camera)   
 ```
+
+
+**See also example**
+[code]()
+[demo]()
+
+The code also works in typescript.
