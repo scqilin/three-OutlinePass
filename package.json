@@ -2,7 +2,7 @@
   "name": "three-outlinepass",
   "version": "1.0.0",
   "description": "three.js Outline Pass",
-  "main": "index.js",
+  "main": "outlinepass.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
