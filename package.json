@@ -1,0 +1,29 @@
+{
+  "name": "three-outlinepass",
+  "version": "1.0.0",
+  "description": "three.js Outline Pass",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scqilin/three-OutlinePass.git"
+  },
+  "keywords": [
+    "three",
+    "three.js",
+    "3d",
+    "outline",
+    "pass"
+  ],
+  "author": "scqilin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/scqilin/three-OutlinePass/issues"
+  },
+  "homepage": "https://github.com/scqilin/three-OutlinePass#readme",
+  "dependencies": {
+    "three": "^0.103.0"
+  }
+}
