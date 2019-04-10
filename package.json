@@ -1,6 +1,6 @@
 {
   "name": "three-outlinepass",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "three.js Outline Pass",
   "main": "OutlinePass.js",
   "scripts": {
@@ -24,6 +24,6 @@
   },
   "homepage": "https://github.com/scqilin/three-OutlinePass#readme",
   "dependencies": {
-    "three": "^0.103.0"
+    
   }
 }
