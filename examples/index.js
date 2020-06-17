@@ -25,10 +25,10 @@ function init() {
     function iniScene() {
         scene = new THREE.Scene();
         camera = new THREE.PerspectiveCamera(45, window.innerWidth / window.innerHeight, 0.1, 3000);
-        renderer = new THREE.WebGLRenderer();
+        renderer = new THREE.WebGLRenderer({alpha: true});
         camera.position.set(-10, 10, 30);
         camera.lookAt(scene.position);
-        renderer.setClearColor(0x222222);
+        renderer.setClearColor(0x222222,.0);
         renderer.shadowMap.enabled = true;
 
         renderer.setSize(window.innerWidth, window.innerHeight);
@@ -55,7 +55,10 @@ function init() {
         outlinePass.hiddenEdgeColor.set(0xff00ff);
 
         scene.add(new THREE.AxesHelper(4));
-        document.getElementById('webgl').appendChild(renderer.domElement);
+        let dom = document.createElement('div');
+        dom.style.backgroundColor = 'cadetblue';
+        document.body.appendChild(dom)
+        dom.appendChild(renderer.domElement);
     }
 
     function iniLight() {
