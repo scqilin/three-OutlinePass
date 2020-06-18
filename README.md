@@ -50,3 +50,5 @@ compose.render(scene, camera)
 ![img](https://scqilin.github.io/three-OutlinePass/examples/outline1.jpg)
 
 The code also works in typescript(but there are some small problems)
+
+The latest code version is 117(three REVISION = '117')
