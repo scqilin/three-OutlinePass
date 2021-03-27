@@ -401,7 +401,7 @@ THREE.RenderPass.prototype = Object.assign(Object.create(THREE.Pass.prototype), 
 
 		if (this.clearColor) {
 
-			oldClearColor = renderer.getClearColor().getHex();
+			oldClearColor = renderer.getClearColor(new THREE.Color()).getHex();
 			oldClearAlpha = renderer.getClearAlpha();
 
 			renderer.setClearColor(this.clearColor, this.clearAlpha);
@@ -761,7 +761,7 @@ THREE.OutlinePass.prototype = Object.assign(Object.create(THREE.Pass.prototype),
 
 		if (this.selectedObjects.length > 0) {
 
-			this.oldClearColor.copy(renderer.getClearColor());
+			this.oldClearColor.copy(renderer.getClearColor(new THREE.Color()));
 			this.oldClearAlpha = renderer.getClearAlpha();
 			var oldAutoClear = renderer.autoClear;
 
